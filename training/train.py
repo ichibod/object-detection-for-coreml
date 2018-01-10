@@ -18,7 +18,6 @@ model.save(modelName + '.model')
 # Mean average Precision
 scores = model.evaluate(data)
 print(scores['mean_average_precision'])
-print(scores['accuracy'])
 
 # Export for use in CoreML
 model.export_coreml(modelName.title() + 'Classifier.mlmodel')
